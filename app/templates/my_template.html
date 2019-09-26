@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+  <title>{{ title }} - Microblog</title>
+  {% else %}
+  <title>Welcome to Microblog!</title>
+  {% endif %}
+<style>
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    background: cyan;
+    padding: 5px;
+    margin:50px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+   
+}
+</style>
+</head>
+<body>
+
+<h1>Styling Lists With Colors by, {{ user }}</h1>
+
+<ol>
+  <li>{{ items[1] }}</li>
+  <li>{{ items[2] }}</li>
+  <li>{{ items[3] }}</li>
+</ol>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+</body>
+</html>

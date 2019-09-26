@@ -1,0 +1,114 @@
+2019-08-28 18:30:47,719 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-08-30 17:36:38,225 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-08-30 17:37:33,992 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-01 15:48:05,982 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-01 15:48:36,420 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-01 15:49:13,059 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-01 16:08:00,125 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 11:17:39,819 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 11:22:43,799 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 11:23:26,441 ERROR: Exception on /explore [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/routes.py", line 131, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/templates/index.html", line 4, in block "content"
+    <h1>Hi, {{ user.username }}!</h1>
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'user' is undefined
+2019-09-03 11:29:52,301 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 15:43:38,677 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 15:43:47,399 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/routes.py", line 42, in index
+    posts = current_user.followed_posts().paginate(page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'app' is not defined
+2019-09-03 15:43:59,495 ERROR: Exception on /index [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/routes.py", line 42, in index
+    posts = current_user.followed_posts().paginate(page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'app' is not defined
+2019-09-03 15:44:41,026 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 15:54:27,305 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 16:00:38,627 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 16:01:01,337 ERROR: Exception on /user/Sahil [GET] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/routes.py", line 26, in user
+    posts = user.posts.order_by(Post.timestamp.desc()).paginate(page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'app' is not defined
+2019-09-03 16:01:58,765 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 20:57:13,612 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:47]
+2019-09-03 21:00:30,646 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:02:00,726 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]

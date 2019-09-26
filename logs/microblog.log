@@ -1,0 +1,34 @@
+2019-09-03 21:09:33,806 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:19:53,255 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:21:57,240 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:22:30,995 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:24:03,639 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:24:47,144 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 21:26:21,907 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 23:27:35,476 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 23:38:30,777 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 23:41:37,853 ERROR: Exception on /reset_password_request [POST] [in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/routes.py", line 156, in reset_password_request
+    send_password_reset_email(user)
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/email.py", line 20, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password', sender=my_app.config['ADMINS'][0], recipients=[user.email], text_body=render_template('email/reset_password.txt',user=user, token=token),html_body=render_template('email/reset_password.html', user=user, token=token))
+  File "/Users/aakshu/code/Python_Projects/My_Project/app/email.py", line 16, in send_email
+    Thread(target=send_async_email, args=(app, msg)).start()
+NameError: name 'app' is not defined
+2019-09-03 23:42:23,149 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-03 23:44:04,776 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-23 18:20:38,895 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
+2019-09-23 18:23:50,196 INFO: Microblog startup [in /Users/aakshu/code/Python_Projects/My_Project/app/__init__.py:49]
